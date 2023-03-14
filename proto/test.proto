@@ -1,0 +1,24 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "../app/pb";
+
+message MysqlConfig {
+    string user_name = 1;
+    string password = 2;
+    string ip = 3;
+    string port = 4;
+    string database = 5;
+}
+
+message ServerConfig {
+    string host = 1;
+    string port = 2;
+    string run_mode = 3;
+    bool client_auth = 4;
+    string read_time_out = 5;
+    string write_time_out = 6;
+    string max_header_bytes = 7;
+    string rate_limit = 8;
+    string rate_limit_period = 9;
+}

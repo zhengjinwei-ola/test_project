@@ -1,0 +1,19 @@
+[mysql]
+userName = "root"
+port = 3306
+ip = "127.0.0.1"
+dbName = "oswin"
+password = "123456"
+[server]
+host = "localhost"
+port = 8000
+runMode = "debug"
+clientAuth = false
+readTimeOut = 60
+writeTimeOut = 60
+maxHeaderBytes = 1048576
+rateLimit = 1000
+rateLimitPeriod = 3600
+[kafka]
+host = "kafka"
+port = 9092
